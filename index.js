@@ -13,6 +13,9 @@ const port=2000;
 
 conectarDB();
 //Redirigimos la solicitud del cliente hacia el routes
+
+app.use(express.json());
+
 app.use('/api/productos', require('./routes/producto'));
 
 
